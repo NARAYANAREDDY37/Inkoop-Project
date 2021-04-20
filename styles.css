@@ -1,87 +1,96 @@
-aside {
-  width: 240px;
-  height: 100%;
-  text-align: center;
-  padding: 10px;
-  font-family: Arial, sans-serif;
-  font-size: 20px;
-  height: 100%;
-  position: fixed;
-  margin-left: 0px;
-}
-
-aside a {
-  display: block;
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
   text-decoration: none;
-  color: black;
-  padding: 25px;
+}
+
+/* sidebar section */
+.wrapper{
+  display:grid;
+  grid-template-columns: 20% 50% 30%;
+  grid-column-gap: 20px;
+  
+  
+}
+.sidebar {
+  
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  left:0;
+  padding: 50px;
+  
+}
+
+.sidebar h2 {
+  font-size:40px;
+  font-weight:bold;
+}
+
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
   font-size: 15px;
+  color: black;
+  box-sizing: border-box;
 }
 
-aside a:hover {
-  color: orangered;
+.sidebar ul a:hover{
+  color:orangered;
 }
 
-aside button {
-  padding: 15px;
-  width: 100px;
-  border-radius: 20px;
+.sidebar button{
+  padding:15px 50px;
+  border-radius:30px;
   background-color: orangered;
-  color: white;
+  border:none;
+
 }
 
-.wrapper {
-  display: flex;
+
+/* Main content section */
+
+.main-content{
+  margin-top: 100px;
+  
 }
-.main-content {
-  display: relative;
+.main-title h1{
+  font-size: 60px;
+}
+.main-text p{
+  margin-top: 100px;
+  color:gray;
+
 }
 
-.main-content h1 {
-  font-size: 55px;
-  margin-left: 250px;
-  margin-right: 0px;
-  margin-top: 120px;
-  display: block;
+/* card section */
+.card-section{
+  display:flex;
+  width:250px;
+  height:200px;
+  margin-top: 100px;
+  
+  
+}
+.card-section div {
+  box-shadow: 0px 0px 10px lightgray;
+  flex: 4;
 }
 
-.main-text-wrapper {
-  display: flex;
-}
-.main-text p {
-  display: block;
-  margin-left: 500px;
-  margin-top: 10px;
-}
-.card-section {
-  margin-left: 250px;
-  width: 50%;
-  margin-right: 0px;
-  display: flex;
-}
-.card-section img {
-  border-radius: 90%;
-  padding: 10px;
-  display: inline-block;
-  justify-content: center;
-}
 .img-section {
-  box-shadow: 0 0 10px black;
-  border-radius: 15px;
-  border: 1px solid white;
-  margin-right: 30px;
-  margin-top: 50px;
+  margin:10px;
+  box-shadow: 0px 0px 10px black;
+  padding:20px;
+  border-radius: 20px;
+  
+}
+.img-section img {
+  border-radius: 50%;
 }
 .img-section p {
+  text-align:center;
   font-weight: bold;
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .img-section {
-    display: inline-block;
-    margin-right: 0px;
-    align-items: center;
-    justify-content: center;
-  }
 }
