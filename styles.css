@@ -1,0 +1,87 @@
+aside {
+  width: 240px;
+  height: 100%;
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  height: 100%;
+  position: fixed;
+  margin-left: 0px;
+}
+
+aside a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 25px;
+  font-size: 15px;
+}
+
+aside a:hover {
+  color: orangered;
+}
+
+aside button {
+  padding: 15px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: orangered;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+}
+.main-content {
+  display: relative;
+}
+
+.main-content h1 {
+  font-size: 55px;
+  margin-left: 250px;
+  margin-right: 0px;
+  margin-top: 120px;
+  display: block;
+}
+
+.main-text-wrapper {
+  display: flex;
+}
+.main-text p {
+  display: block;
+  margin-left: 500px;
+  margin-top: 10px;
+}
+.card-section {
+  margin-left: 250px;
+  width: 50%;
+  margin-right: 0px;
+  display: flex;
+}
+.card-section img {
+  border-radius: 90%;
+  padding: 10px;
+  display: inline-block;
+  justify-content: center;
+}
+.img-section {
+  box-shadow: 0 0 10px black;
+  border-radius: 15px;
+  border: 1px solid white;
+  margin-right: 30px;
+  margin-top: 50px;
+}
+.img-section p {
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .img-section {
+    display: inline-block;
+    margin-right: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+}
